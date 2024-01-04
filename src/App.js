@@ -47,7 +47,6 @@ const aoNovoInvocadorAdicionado = (invocador) => {
   return (
     <div className="App">
       <Banner/>
-      {/*Aqui acima temos o import basicamente do Banner que esá na pasta de*/}
       <Formulario times={times.map(time => time.nome)} aoInvocadorCadastrado ={invocador => aoNovoInvocadorAdicionado(invocador)}/>
 
       {times.map(time => <Time 
